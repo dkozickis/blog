@@ -67,7 +67,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-remove-trailing-slashes`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://dkozickis.com`,
+        // noTrailingSlash: true,
+      },
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
